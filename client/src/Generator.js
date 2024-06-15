@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-
-
 import './generator.css';
 
+// import { Link } from "react-router-dom";
+
+
 function Generator() {
-    const [subject, setSubject] = useState(('')
+    const [subject, setSubject] = useState('');
+    const [purpose, setPurpose] = useState('');
+    const [emailBody, setEmailBody] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,11 +20,7 @@ function Generator() {
         },
         body: JSON.stringify({ subject, purpose }),
       });
-    }
-  }
-)
-    const [purpose, setPurpose] = useState('');
-    const [emailBody, setEmailBody] = useSta
+
       if (response.ok) {
         const data = await response.json();
         const formattedEmailBody = data.emailBody.replace(/\n/g, '<br />');
@@ -55,7 +54,8 @@ function Generator() {
             <li><a href="#Use">REFERENCE</a></li>
             <li><a href="#footer">CONTACT</a></li>
         </ul>
-       <a href="Login.js"> <button type='submit' className="login"> Login </button></a> 
+       <a href="login.html"> <button className= "login"> Login </button></a> 
+      
     </div>
 </nav>
 
@@ -216,7 +216,7 @@ function Generator() {
    {/* send */}
         <div className="send">
   <h3 className="text">Let's try this to Send a Email</h3>
-  <a href="Emailform"> <button id="send" >SEND</button></a> 
+  <a href="../frontend/send.html"> <button id="send" >SEND</button></a> 
 </div>
 
 {/* <!-- use-case --> */}
