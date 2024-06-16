@@ -1,10 +1,8 @@
 {
-    "version": 2,
-    "name": "quick-mail",
-    "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/Generator.js" }
-    ]
- }
+   "rewrites": [
+       {
+           "source": "/(.*)",
+           "destination": "/client/src/Generator.js"
+       }
+   ]
+}
