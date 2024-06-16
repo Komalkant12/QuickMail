@@ -1,0 +1,67 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-image: url("Image/VRSN_CompanyBrandedEmail_BlogImage8_201712-670x446.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .login {
+        width: 500px;
+        margin: 0 auto;
+        padding: 40px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(39, 191, 202, 0.516);
+        /* Alice Blue with 70% opacity */
+        backdrop-filter: blur(10px);
+        margin-top: 10%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input {
+        margin-bottom: 15px;
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid black;
+        background: none;
+        border-radius: 3px;
+        outline: none;
+    }
+    
+    input[type="submit"] {
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    
+    p {
+        text-align: center;
+    }
+    /* Use Link from React Router */
+    
+    Link {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #007bff;
+    }
